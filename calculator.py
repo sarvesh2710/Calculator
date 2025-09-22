@@ -4,7 +4,7 @@ def calculator():
     print("Type 'exit' to quit the calculator\n")
     
     while True:
-        # Get the first number
+        
         try:
             num1 = input("Enter the first number (or 'exit' to quit): ")
             if num1.lower() == 'exit':
@@ -15,7 +15,7 @@ def calculator():
             print("Invalid input. Please enter a valid number.\n")
             continue
         
-        # Get the operator
+        
         operator = input("Enter an operator (+, -, *, /): ")
         if operator.lower() == 'exit':
             print("Thank you for using the calculator. Goodbye!")
@@ -24,7 +24,7 @@ def calculator():
             print("Invalid operator. Please use +, -, *, or /.\n")
             continue
         
-        # Get the second number
+        
         try:
             num2 = input("Enter the second number (or 'exit' to quit): ")
             if num2.lower() == 'exit':
@@ -35,7 +35,7 @@ def calculator():
             print("Invalid input. Please enter a valid number.\n")
             continue
         
-        # Perform calculation
+        
         try:
             if operator == '+':
                 result = num1 + num2
@@ -54,6 +54,7 @@ def calculator():
         except Exception as e:
             print(f"An error occurred: {e}\n")
 
-# Run the calculator
+
 if __name__ == "__main__":
+
     calculator()
